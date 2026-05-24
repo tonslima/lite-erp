@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:8080
+
+### Register Catalog Item - 200
+POST {{baseUrl}}/catalog
+Content-Type: application/json
+
+{
+  "name": "Clareamento",
+  "price": 500
+}
+
+### Register Catalog (missing name or price)
+POST {{baseUrl}}/catalog
+Content-Type: application/json
+
+{
+  "price": 500
+}
